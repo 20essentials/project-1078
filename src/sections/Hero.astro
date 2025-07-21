@@ -247,7 +247,6 @@ const selectedBoxer = FIGHTERS.find((boxer) => boxer.id === selectedBoxerId) ?? 
     boxerCards.forEach((card, cardIndex) => {
       if (isMobile) {
         card.addEventListener('click', (event) => {
-          alert('h')
           event.preventDefault()
           event.stopPropagation()
           // Si no tiene `data-selected` entonces lo agregamos
