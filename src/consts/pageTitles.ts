@@ -1,4 +1,4 @@
-export const fixedTitle: string = 'La Velada del Año V Web Oficial - Evento de boxeo de Ibai Llanos con creadores de contenido'
+export const fixedTitle: string = 'Hero de la Velada 5 #practice'
 
 export const porra: string = `La Porra - ${fixedTitle}`
 
