@@ -12,13 +12,13 @@ const { boxers } = Astro.props
     {
       boxers.map(({ id, name }) => (
         <div class="relative h-20 overflow-hidden">
+          
           <img
             data-id={`hero-text-${id}`}
             src={`/images/fighters/text/${id}.webp`}
             alt={name}
             decoding="async"
             class="mask-fade-text hidden h-full w-auto"
-            fetchpriority="low"
             transition:name={`text-${id}`}
           />
           <div
