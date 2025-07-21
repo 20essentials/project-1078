@@ -9,7 +9,7 @@ export interface Social {
   label: string;
   followers?: string;
   image: {
-    logo: any;
+    logo?: any;
     width: number;
     height: number;
   };

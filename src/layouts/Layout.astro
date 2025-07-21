@@ -3,9 +3,7 @@ import { ClientRouter } from 'astro:transitions'
 
 import '@/styles/global.css'
 
-import Header from '@/sections/Header.astro'
 import { fixedTitle } from '@/consts/pageTitles'
-import Spotlight from '@/components/Spotlight.astro'
 interface Props {
   title: string
   description?: string
@@ -108,9 +106,6 @@ const {
     <ClientRouter />
   </head>
   <body>
-    <Spotlight />
-    <Header />
-    <!-- Añadir skip link para que los usuarios de teclado puedan saltar al contenido principal -->
     <a href="#main-content" class="sr-only focus:not-sr-only"> Saltar al contenido principal </a>
     <main id="main-content">
       <div

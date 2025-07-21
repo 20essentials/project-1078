@@ -1,6 +1,6 @@
 ---
 import { FIGHTERS } from '@/consts/fighters'
-import SelectYourBoxer from '@/components/Boxers/SelectYourBoxer.astro'
+import SelectYourBoxer from '@/components/SelectYourBoxer.astro'
 
 const selectedBoxerId = Astro.url.searchParams.get('luchador') ?? FIGHTERS[0].id
 const selectedBoxer = FIGHTERS.find((boxer) => boxer.id === selectedBoxerId) ?? FIGHTERS[0]
@@ -20,7 +20,6 @@ const selectedBoxer = FIGHTERS.find((boxer) => boxer.id === selectedBoxerId) ?? 
         <img
           class="relative z-20 h-auto w-48 sm:w-72 md:w-80 lg:w-96"
           src="/images/logo.webp"
-          fetchpriority="high"
           alt="La Velada del Año V"
           decoding="async"
         />
